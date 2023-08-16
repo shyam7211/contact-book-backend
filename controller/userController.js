@@ -51,7 +51,7 @@ const loginUser = asyncHandler (async (req, res) => {
                 email: user.email,
                 id: user.id
             },
-        }, process.env.ACCESS_TOKEN_KEY, {expiresIn: "10m"});
+        }, process.env.ACCESS_TOKEN_KEY);
         res.status(200).json({accessToken});
     }else {
         res.status(401);
