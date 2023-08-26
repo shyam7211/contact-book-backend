@@ -8,6 +8,14 @@
   ],
   "routes": [
     {
+      "src": "/api/contacts/(.*)",
+      "dest": "/api/contacts/$1"
+    },
+    {
+      "src": "/api/user/(.*)",
+      "dest": "/api/user/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "server.js"
     }
